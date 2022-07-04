@@ -4,5 +4,13 @@ const sayHello = (toWhom) => {
   return output;
 };
 
+// const sayGoodbye = (toWhom) => {
+//   const output = `Goodbye, ${toWhom}!`;
+//   return output;
+// };
+
 // make the functions exportable
-module.exports = sayHello;
+module.exports = {
+  sayHello: sayHello,
+  // sayGoodbye: sayGoodbye
+};

@@ -7,9 +7,9 @@
 - [x] Exporting our code
 - [x] Intro to NPM: a Node package manager
 - [x] Mocha test runner
-- [] Ignoring files/folders
-- [] Chai assertion library
-- [] What is TDD?
+- [x] Ignoring files/folders
+- [x] Chai assertion library
+- [x] What is TDD?
 
 ### TDD
 - **T**est **D**riven **D**evelopment
