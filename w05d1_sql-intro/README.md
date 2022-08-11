@@ -95,24 +95,25 @@ FROM objectives;
 
 ## a where clause
 
-SELECT question, answer
+SELECT id, question
 FROM objectives
 WHERE type = 'performance';
 
 ## a where clause with AND
 
-SELECT question, answer
+SELECT id, question
 FROM objectives
 WHERE type = 'performance' AND sort < 5;
 
 ## JOIN
-SELECT day_description, question, answer
+SELECT day_description, question
 FROM objectives
-JOIN days ON objectives.day_id = days.id;
+INNER JOIN days ON objectives.day_id = days.id;
 
 ## having (... because you cannot use WHERE on an aggregate function)
 
-SELECT count(day_id) 
+SELECT day_id, count(day_id) 
 FROM objectives 
 GROUP BY day_id 
-HAVING count(day_id) > 3;
+HAVING count(day_id) < 3 
+ORDER BY day_id;
