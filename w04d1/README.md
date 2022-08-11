@@ -7,6 +7,10 @@
 
 # Semantic HTML
 
+<div></div>
+<span></span>
+<p></p>
+
 <header></header>
 <main>
   <article></article>
@@ -21,6 +25,46 @@
 [] MDN CSS Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 [] What is the 'size' of a box? depends on the 'box-sizing' property.
 [] Check out http://guyroutledge.github.io/box-model/
+
+
+
+
+
+
+# Sample HTML
+
+<main>
+<h2>Title Goes Here</h2>
+<article>
+<p class="emphasis">The quick brown fox jumped over the lazy dog's back.</p>
+<p id="two">this is the second paragraph</p>
+<p class="emphasis">this is the third</p>
+</article>
+<div class="emphasis">
+</div>
+</main>
+
+
+# Sample CSS
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #FF0000;
+}
+
+.emphasis {
+  font-size: 20px;
+}
+
+#two {
+  font-size: 10px;
+}
+
+
+
 
 # Element Layout
 

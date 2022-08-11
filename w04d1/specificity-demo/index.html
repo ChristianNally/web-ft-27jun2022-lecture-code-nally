@@ -10,14 +10,17 @@
     <title>Specificity Demo</title>
   </head>
   <style>
-    p#unique {
-      color: black;
+    #dadjoke {
+      color: blueviolet;
     }
-    p.majority {
-      color: red;
+    #unique {
+      color: black;
     }
     p {
       color: green;
+    }
+    p.majority {
+      color: red;
     }
   </style>
   <body>
@@ -25,11 +28,14 @@
       Q: How do you catch a unique rabbit? A: Unique up on them.
     </p>
     <p class="majority">
-      Q: Why do you never see hippos hiding in trees? A: Because they're very good at it.
+      Q: Why do you never see <span id="dadjoke">hippos</span> hiding in trees? A: Because they're very good at it.
     </p>
     <p class="third">
       I think the Rainforest Cafe takes the whole rainforest theme too far.
       This one time I was sitting there eating my chicken tenders and they bulldozed 40% of the restaurant.
     </p>
+    <div class="majority">
+      Some extra content. Some extra content. Some extra content. Some extra content. Some extra content. 
+    </div>
   </body>
 </html>
